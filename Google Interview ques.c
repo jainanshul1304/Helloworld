@@ -1,11 +1,14 @@
-#include<stdio.h>
-#include<math.h>
+//A C Program to determine whether a no can be represented in the form of 5^n(5 raised to the power n)
+
+#include <stdio.h>
+#include <math.h>
+#include <conio.h>
+#include <string.h>
 
 int main()
 {
-
-float t,c,x,n,number = 5;
-/*
+    float t, c, x, n, number = 5;
+    /*
 
 Since x = 5^n we can say that log x base 5 is equal to n
 i.e, log(x) base 5 = n
@@ -13,23 +16,22 @@ Since the standard base in c is 10 to change the base we are going to apply basi
 log (x) base 5 = log (x) base 10/log (5) base 10
 
 */
-c = log(5);
-//Taking the input i.e,x from the user
-printf("the value of x is:");
-scanf("%f",&x);
 
-t = log(x);
-//Printing the value t and c i.e, logarithm of x and 5 respectively
+    c = log(5);
+    //Taking the input i.e,x from the user
+    printf("the value of x is:");
+    scanf("%f", &x);
 
-printf(" %lf = log(%lf)\n",t,x);
-printf(" %lf = log(%lf)\n",c,number);
+    t = log(x);
+    //Printing the value t and c i.e, logarithm of x and 5 respectively
 
-n = t / c;
-//Finally printing value of n
-printf("%f = %f/%f\n",n,t,c);
-scanf("%f%f%f",&t,&c,&n);
+    printf(" %lf = log(%lf)\n", t, x);
+    printf(" %lf = log(%lf)\n", c, number);
 
+    n = t / c;
+    //Finally printing value of n
+    printf("%f = %f/%f\n", n, t, c);
+    scanf("%f%f%f", &t, &c, &n);
 
-return 0;
+    return 0;
 }
-
