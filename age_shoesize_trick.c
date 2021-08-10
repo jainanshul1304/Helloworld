@@ -50,8 +50,6 @@ int main()
 
       printf("\nVOILA, THE FIRST TWO NUMBERS OR FIRST NUMBER OF THE FOUR/THREE-DIGIT NUMBER YOU GET ARE YOUR SHOE SIZE, AND THE NEXT TWO NUMBERS ARE YOUR AGE\n");
 
-      printf("\nNOTE:If your birthday has not passed yet then subtract 1!\n");
-
       printf("\nDo you want to play this game again? \n");
       scanf("%d", &Ans);
     } while (Ans == 1);
