@@ -49,7 +49,9 @@ int main()
       }
 
       printf("\nVOILA, THE FIRST TWO NUMBERS OR FIRST NUMBER OF THE FOUR/THREE-DIGIT NUMBER YOU GET ARE YOUR SHOE SIZE, AND THE NEXT TWO NUMBERS ARE YOUR AGE\n");
-
+    
+      printf("Press 1 to play the game & press any other key to leave\n");
+      
       printf("\nDo you want to play this game again? \n");
       scanf("%d", &Ans);
     } while (Ans == 1);
